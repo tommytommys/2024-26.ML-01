@@ -28,8 +28,8 @@ def test_E1_Triangoli_perimetro():
     assert libreria_esercizi.E1_Triangoli_perimetro([7, 7, 10]) == 24
     assert libreria_esercizi.E1_Triangoli_perimetro([7, 7, 7]) == 21
 def test_E1_Triangoli_IsValidTriangolo():
-    assert libreria_esercizi.E1_triangoli_IsValidTriangolo(7,7,10)==True
-    assert libreria_esercizi.E1_triangoli_IsValidTriangolo(10,10,100)==False
+    assert libreria_esercizi.E1_Triangoli_isValidTriangolo(7,7,10)==True
+    assert libreria_esercizi.E1_Triangoli_isValidTriangolo(10,10,100)==False
 def Test_e2_Libreriastringa():
     assert libreria_esercizi.e2_Libreriastringa(["Mario","Luigi","PrincipessaPeach","Bowser"])
     assert libreria_esercizi.e2_Libreriastringa([])==""
