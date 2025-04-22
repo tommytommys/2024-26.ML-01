@@ -1,4 +1,4 @@
-import libreria_esercizi
+from bono import libreria_esercizi
 import pytest
 
 def test_E1_Triangoli_classifier():
