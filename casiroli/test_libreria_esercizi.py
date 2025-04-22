@@ -27,3 +27,16 @@ def test_E1_Triangoli_perimetro():
     assert libreria_esercizi.E1_Triangoli_perimetro([15, 7, 10]) == 32
     assert libreria_esercizi.E1_Triangoli_perimetro([7, 7, 10]) == 24
     assert libreria_esercizi.E1_Triangoli_perimetro([7, 7, 7]) == 21
+
+def test_E1_Triangoli_isValidTriangolo():
+    assert libreria_esercizi.E1_Triangoli_isValidTriangolo(7, 7, 10) == True
+    assert libreria_esercizi.E1_Triangoli_isValidTriangolo(10, 10, 100) == False
+    assert libreria_esercizi.E1_Triangoli_isValidTriangolo(7, 2, 10) == False
+    assert libreria_esercizi.E1_Triangoli_isValidTriangolo(15, 7, 10) == True
+
+def test_E3_ListaStringa():
+    assert libreria_esercizi.E3_ListaStringa(["Mario", "Luigi", "PrincipessaPeach", "Bowser", "Toad"]) == "Mario_Luigi_PrincipessaPeach_Bowser_Toad"
+    assert libreria_esercizi.E3_ListaStringa([]) == ""
+    assert libreria_esercizi.E3_ListaStringa(["Mario"]) == "Mario"
+    assert libreria_esercizi.E3_ListaStringa([" "]) == " "
+    assert libreria_esercizi.E3_ListaStringa([" ", "Mario"]) == " _Mario"
