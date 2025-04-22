@@ -1,5 +1,4 @@
-from girola
-import libreria_esercizi
+from girola import libreria_esercizi
 import pytest
 
 def test_E1_Triangoli_classifier():
