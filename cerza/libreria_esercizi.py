@@ -39,7 +39,8 @@ def E1_Triangoli_area(lati):
         
         area = math.sqrt(perimetro/2*(perimetro/2-lati[0])*(perimetro/2-lati[1])*(perimetro/2-lati[2]))
         return round(area, 2)
- def E1_Triangoli_isValidTriangolo(lato1, lato2, lato3):
+
+def E1_Triangoli_isValidTriangolo(lato1, lato2, lato3):
     if ((lato1 + lato2 <= lato3) or (lato1 + lato3 <= lato2) or (lato3 + lato2 <= lato1)):
         return False
     else:
