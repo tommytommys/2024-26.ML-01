@@ -1,1 +1,12 @@
 name: action di tommytommy
+on: 
+  push:
+jobs: 
+  BUONGIORNO: 
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "namo" 
+       
+
+
+ 
