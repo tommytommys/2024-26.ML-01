@@ -6,7 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: echo "namo" 
-       
+      - run: echo "ski_e_wok_baby_yay, slime shit" 
+      - run: python --version
+      - run: ifconfig 
+      - run: pip --version
+      - run: lsb_release -d
+      - run: ls -la
+      - run: pwd
+      - run: env
 
 
  
