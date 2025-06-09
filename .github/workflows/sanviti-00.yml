@@ -2,23 +2,25 @@ name: action di tommytommy
 on: 
   push:
 jobs: 
-  BUONGIORNO: 
-    runs-on: ubuntu-latest
-    steps: 
-      - run: echo "namo" 
-      - run: echo "ski_e_wok_baby_yay, slime shit" 
-      - run: python --version
-      - run: ifconfig 
-      - run: pip --version
-      - run: lsb_release -d
-      - run: ls -la
-      - run: pwd
-      - run: env
-      - uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            sanviti
-
+   name: machine_learning
+   runs-on: ubuntu latest
+   steps:
+    - uses: actions/checkout@v4
+      with:
+        sparse-checkout: |
+          sanviti
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    - run: pip install -r sanviti/requirements.txt
+    - name: controlla la cartella sanviti
+    - run: ls -laR sanviti
+    - run: python sanviti/esame_ml.py 
+    - name: carica modello addestrato come artifact
+      uses: action/upload-artifact@v4
+      with:
+        name: modello-case
+        path: sanviti/model.pkl
 
 
 
